@@ -1,7 +1,7 @@
 console.log('Hello app');
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/focus-demo-app/app/sw/sw.js', { scope: '/focus-demo-app/app/sw/' }).then(reg => {
+    navigator.serviceWorker.register('/sw.js', { scope: '/sw/' }).then(reg => {
 
       if(reg.installing) {
           console.log('Service worker installing');
